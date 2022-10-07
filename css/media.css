@@ -1,0 +1,165 @@
+@media (max-width: 1200px) {
+  .description__content--img img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .structure__content {
+    width: 170px;
+  }
+
+  .structure__content--item {
+    padding: 7px;
+    margin: 20px 7px;
+  }
+
+  .structure__content--img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .description__content-block {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .description__content .title {
+    text-align: center;
+  }
+
+  .description__content-block--text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .description {
+    padding: 50px 0px;
+  }
+
+  .description__list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .product-img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .structure {
+    padding-top: 50px;
+  }
+
+  .structure__body {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+
+  .structure__content {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .structure__content--item {
+    margin: 20px 30px;
+  }
+
+  .description__content--img img {
+    max-width: 300px;
+  }
+
+  .countdown {
+    margin: 50px 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-img {
+    max-width: 150px;
+  }
+
+  .full-screen__img {
+    padding: 30px 30px;
+  }
+
+  .buy_btn {
+    font-size: 14px;
+    padding: 10px 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .structure__content--item {
+    padding: 7px;
+    margin: 10px 5px;
+  }
+
+  .structure__content--img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .countdown {
+    margin: 37px 30px;
+  }
+
+  .footer__block {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .footer__block--item:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 470px) {
+  .full-screen__body {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .full-screen__body .full-screen__img {
+    display: none;
+  }
+
+  .reviews {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .reviews__block--item {
+    background-color: rgba(0, 0, 0, 0.87);
+    max-width: 270px;
+    padding: 15px 15px 30px 15px;
+  }
+
+  .description__content--img img {
+    max-width: 270px;
+  }
+
+  .description__list {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 17px;
+  }
+}
+
+@media (max-width: 400px) {
+  .structure__content--img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .structure__content--item {
+    padding: 7px;
+    margin: 10px 3px;
+  }
+}

@@ -1,0 +1,462 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h3 {
+  font-size: calc(var(--index) * 2);
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+@font-face {
+  font-family: raleway_f;
+  src: url(../fonts/raleway-v22-cyrillic-300.woff2);
+}
+
+@font-face {
+  font-family: raleway_f;
+  src: url(../fonts/raleway-v22-cyrillic-900.woff2);
+  font-weight: 900;
+}
+
+body {
+  color: #fff;
+  background-color: #fff;
+  font-family: raleway_f, sans-serif;
+  line-height: 1.55;
+}
+
+span {
+  color: #e6ba0b;
+}
+
+.header {
+  min-height: 100vh;
+  color: #fff;
+}
+
+.full-screen {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-screen__bg {
+  background-color: rgba(0, 0, 0, 0.397);
+  z-index: 2;
+}
+
+.full-screen__body {
+  position: relative;
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.full-screen__title {
+  font-size: calc(var(--index) * 3);
+  letter-spacing: calc(var(--index) / 4);
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.full-screen__text {
+  font-size: calc(var(--index) * 1.3);
+  letter-spacing: calc(var(--index) / 4);
+}
+
+.full-screen__list {
+  margin-bottom: 40px;
+}
+
+.full-screen__item {
+  margin-bottom: 5px;
+}
+
+.buy_btn {
+  font-size: 17px;
+  color: #000;
+  padding: 15px 70px;
+  background-color: #e6ba0b;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.buy_btn:hover {
+  background-color: rgb(12, 11, 11);
+  border-color: #e6ba0b;
+  color: #e6ba0b;
+}
+
+.full-screen__img {
+  background-color: rgba(0, 0, 0, 0.473);
+  border-radius: 90px 0px 140px;
+  padding: 37px 37px;
+  border: 2px solid #e6ba0b;
+}
+
+.product-img {
+  filter: brightness(89%);
+  max-width: 270px;
+}
+
+.full-screen__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*STRUCTURE*/
+
+.structure {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.904), rgba(0, 0, 0, 0.774)), url(../images/gym.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.structure__body {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  align-items: center;
+}
+
+.title {
+  font-size: calc(var(--index) * 1.7);
+  letter-spacing: calc(var(--index) / 4);
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.structure__img {
+  background-color: rgba(0, 0, 0, 0.473);
+  border-radius: 3px;
+  padding: 37px 37px;
+  border: 2px solid #e6ba0b;
+  margin-bottom: 30px;
+}
+
+.structure__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: calc(var(--index) * 1.1);
+  letter-spacing: calc(var(--index) / 6);
+  width: 230px;
+}
+
+.structure__content--item {
+  background-color: rgba(255, 255, 255, 0.151);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.structure__content--img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*REVIEWS*/
+
+.reviews {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.836)), url(../images/reviews-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.reviews__block--item {
+  background-color: rgba(0, 0, 0, 0.87);
+  max-width: 300px;
+  padding: 15px 15px 30px 15px;
+  border: 1px solid #e6ba0b;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.reviews__block {
+  margin-top: 50px;
+}
+
+.reviews__block--images {
+  padding: 10px;
+}
+
+.reviews__block--images img {
+  max-width: 200px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.reviews__block--name {
+  font-size: calc(var(--index) * 0.9);
+  letter-spacing: calc(var(--index) / 9);
+  margin-bottom: 10px;
+  color: burlywood;
+}
+
+/*SLIDER-SLICK*/
+
+.slider {
+  position: relative;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 2px solid #e6ba0b;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #e6ba0b;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.slider__item {
+  text-align: center;
+  margin: 0 auto;
+  transition: all 0.3s ease 0s;
+}
+
+/*DESCRIPTION*/
+
+.description {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.74)), url(../images/lab.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 90px 0px;
+}
+
+.description__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.description__content .title {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.description__content-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description__content-block--text {
+  max-width: 600px;
+  font-size: calc(var(--index) * 0.8);
+  letter-spacing: calc(var(--index) / 14);
+}
+
+.description__content--img img {
+  filter: brightness(85%);
+  max-width: 500px;
+}
+
+.description__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.description__item {
+  font-size: calc(var(--index));
+  letter-spacing: calc(var(--index) / 9);
+  text-transform: uppercase;
+  color: #e6ba0b;
+  font-weight: 900;
+}
+
+.description button {
+  margin: 0 auto;
+}
+
+/*FOOTER*/
+
+.footer {
+  padding: 50px 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.797), rgba(0, 0, 0, 0.733)), url(../images/man4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__block--item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__img {
+  background-color: rgba(0, 0, 0, 0.356);
+  border-radius: 70px 0 70px;
+  padding: 37px 37px;
+  border: 7px solid #e6ba0b;
+  margin-bottom: 20px;
+}
+
+.prise {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  font-size: calc(var(--index) * 1.4);
+  letter-spacing: calc(var(--index) / 14);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+}
+
+.prise_old {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.356);
+  font-weight: 900;
+}
+
+.prise_new {
+  color: #e6ba0b;
+  font-size: calc(var(--index) * 1.6);
+  letter-spacing: calc(var(--index) / 14);
+  text-shadow: 0 0 15px #9d822b;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.prise_new:hover {
+  transform: scale(1.17);
+}
+
+.footer__form {
+  max-width: 500px;
+}
+
+.footer__form-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.747);
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 57px;
+  color: #fff;
+}
+
+.footer__form-input::placeholder {
+  font-size: calc(var(--index) * 1);
+  letter-spacing: calc(var(--index) / 12);
+  opacity: 0.5;
+  color: #fff;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 50px 200px;
+}
+
+.time {
+  text-align: center;
+}
+
+.time p {
+  font-size: calc(var(--index) * 0.8);
+  letter-spacing: calc(var(--index) / 14);
+}
